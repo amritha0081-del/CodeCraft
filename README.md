@@ -2,97 +2,109 @@
 
 
 
-# [Project Name] 🎯
+# [Anti-Study Lamp] 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: [CodeCraft]
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: [Amritha P M] - [College Of engineering Munnar]
+- Member 2: [Amritha P M ] - [College Of engineering Munnar]
+- Member 3: [Ahalya Preman] - [College Of engineering Munnar]
 
 ### Project Description
-[2-3 lines about what your project does]
+[An AI based smart lamp that uses a camera and python to detect whether a book is open or closed and controls the lamp using Arduino and a Relay]
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+[People often forget to switch off a lamp when they stop studying, wasting electricity]
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+[]
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- [PYTHON]
+- [ARDUINO IDE]
+- [OPENCV]
+- [Arduino board,Relay module,Webcam,laptop,USB,Serial monitor]
 
 For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+- [Arduino board ]
+- [Relay module]
+- [LED strip]
 
-### Implementation
-For Software:
+
 # Installation
-[commands]
+[pip install opencv-python
+pip install pyserial]
 
 # Run
-[commands]
+[python anti_detect.py]
 
 ### Project Documentation
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+[]<img width="1107" height="901" alt="anti detect py" src="https://github.com/user-attachments/assets/2ee881b7-f684-4232-b892-74d76b95a679" />
+"This screenshot shows the working of our Anti-Study Lamp. The laptop camera monitors the defined study area. When the book is detected inside the marked area, the Python program identifies the object and sends the signal 1 to the Arduino. The Arduino then activates the relay, which switches the LED lamp OFF. When the book is removed, the program sends 0, and the relay switches the LED lamp ON."
 
 # Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+📷 Camera
+     ↓
+📖 Book Detection
+     ↓
+🐍 Python + OpenCV
+     ↓
+🔌 Serial Communication
+     ↓
+🤖 Arduino (COM3)
+     ↓
+⚡ Relay Module
+     ↓
+💡 Study Lamp
+Workflow of the Anti-Study Lamp: The camera detects the book’s state, Python processes the image and sends a command to Arduino, which controls the lamp through a relay.
 
 For Hardware:
-
 # Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
+<img width="870" height="770" alt="circuit" src="https://github.com/user-attachments/assets/f676d060-f5be-452d-8a43-a95b1e371c99" />
 
 # Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
+<img width="960" height="1280" alt="components" src="https://github.com/user-attachments/assets/7d2dc2d8-60c2-4893-acab-9f38cbed7f4c" />
+Arduino board, Relay module, LED strip, Battery supply, USB cable
 
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
-
+![Build]
+<img width="576" height="276" alt="build anti study lamp" src="https://github.com/user-attachments/assets/429fd696-635d-4d01-a9c6-02029a70aea2" />
+Build Process
+1. Collect the components
+Arduino Uno,Relay module,LED bulb/lamp,USB cable
+2. Connect the relay
+Connect VCC → 5V,Connect GND → GND,Connect IN → an Arduino digital pin.
+the relay acts as an electronic switch for the lamp.
+3. Connect the LED lamp
+Connect the lamp through the relay's switching terminals.
+4.Upload the Arduino program
+Write the program in Arduino IDE
+Upload it to the Arduino through USB.
+The program continuously checks the sensor.
+Give the required input to the sensor.
+Arduino processes the sensor value.
+Arduino sends a signal to the relay.
+The relay switches the LED lamp ON/OFF according to the programmed condition.
+![final process]
+<img width="720" height="1280" alt="anti study lamp book open" src="https://github.com/user-attachments/assets/20614ab4-552f-4613-aa32-b61fd6442bf8" />
+Book opens light off
+<img width="720" height="1280" alt="anti study lamp book close" src="https://github.com/user-attachments/assets/6116cc60-5146-4770-833d-bf20f48e69e7" />
+Book close light on
+Simple working flow:Sensor → Arduino → Relay → LED Lamp
 ### Project Demo
-# Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
-
-# Additional Demos
-[Add any extra demo materials/links]
-
+# Video:
+https://github.com/user-attachments/assets/ebf6aac3-68df-44a1-b9ac-0b60b3ac746f
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
-
+- [Amritha P M]: [Hardware]
+- [Ahalya Preman]: [Software]
 ---
 Made with ❤️ at TinkerHub Useless Projects 
 
